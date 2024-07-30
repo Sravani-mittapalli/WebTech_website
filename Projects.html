@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+body
+{
+margin: 0;
+}
+
+.part1
+{
+   display: flex;
+   flex-direction: row;
+   background-color: aliceblue;
+
+}
+.part1 h1
+{
+    font-size: 80px;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: move 4s ease 1s infinite ;
+    position: relative;
+}
+.part2
+{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(183, 47, 47, 0.865);
+    margin: 0;
+
+
+}
+.part2 ul li a
+{
+text-decoration: none;
+color: white;
+list-style: none;
+margin-left: 50px;
+font-size: 20px;
+}
+.part2 ul li 
+{
+    list-style: none;
+    margin-top: 9px;
+
+}
+.part2 ul 
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+}
+
+@keyframes move {
+100%
+{
+    background-position-y:500px ;
+}
+
+}
+.part2 ul li a:hover {
+    background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(183, 47, 47, 0.865);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.HEAD h1{
+    margin: 0;
+
+}
+.HEAD h4
+{
+    padding-top: 40px;
+    letter-spacing: 7px;
+}
+.list li
+{
+    margin-left: 100px;
+}
+.l1
+{
+height: 65px;
+width: 250px;
+border: 2px solid black;
+border-radius: 15px;
+transition: 2s;
+}
+.l1 a
+{
+    text-decoration: none;
+    color: black;
+
+}
+.list
+{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.l1 li
+{
+  margin-left: 45px;
+  margin-top: 20px;
+}
+.part3 h1{
+            margin: 0;
+            padding: 0;
+        }
+.part3
+{
+    height: 100vh;
+    background-image: url(b5.png);
+    background-size: cover;
+    font-size: 18px;
+}
+.l1:hover
+{
+    background-color: rgb(182, 40, 40);
+    margin-bottom: 20px;
+
+
+
+}
+ .l1 li a{
+    animation: mov 2s linear infinite;
+
+}
+</style>
+</head>
+<body>
+<div class="main-part">
+    <div class="part1">
+        <div class="HEAD">
+            <h4><center>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</center></h4>
+            <h1>WEB TECHNOLOGIES</h1>
+        </div>         <img style="height: 180px;width: 400px;margin-top: 30px;margin-left: 170px;" src="img3.jpeg" alt="logo">
+    </div>
+    <div class="part2">
+        <ul>
+            <li><a href="Assignment1.html">Home</a></li>
+            <li><a href="CourseDetails.html">Course Details</a></li>
+            <li><a href="Material.html">Material</a></li>
+            <li class="dropdown">
+                <a href="Projects.html" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="projects_2024.html">2024</a>
+                    <a href="projects_2023.html">2023</a>
+                    <a href="projects_2022.html">2022</a>
+                </div>
+            </li>           
+            <li><a href="Quiz.html">Quiz</a></li> 
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Contact.html">Contact Us </a></li>
+        </ul>
+    </div>
+</div>
+<div class="part3">
+    <h1 style="text-decoration: underline; font-family: fantasy; font-size: 40px; padding-top: 30px;"><caption><center>Web Development Project Ideas</center></caption></h1>
+    <div class="list">
+    <ol>
+        <div class="p1">
+        <div class="l1">
+            <li><a href="Details.html">One-page Layout or Design </a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Product Landing Page </a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Netflix Home Page Clone </a></li>
+        </div>
+        <div class="l1">
+            <li>Quiz App</li>
+        </div>
+    </div>
+    <br>
+    <div class="p1">
+        <div class="l1">
+            <li><a href="Details.html">Background Generator</a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Temperature Converter Website</a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Restaurant Website</a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Portfolio Website</a></li>
+        </div>
+    </div>
+    <br>
+    <div class="p1">
+        <div class="l1">
+            <li><a href="Details.html">To-do List App</a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Github Explorer </a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">Weather Forecast Website </a></li>
+        </div>
+        <div class="l1">
+            <li><a href="Details.html">WhatsApp Web Clone</a></li>
+        </div>
+    </div>
+
+    </ol>
+   </div>
+   <br><br><br><br><br><br>
+</div>
+    
+</body>
+</html>

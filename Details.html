@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+body
+{
+margin: 0;
+
+}
+
+.part1
+{
+   display: flex;
+   flex-direction: row;
+   background-color: aliceblue;
+
+}
+.part1 h1
+{
+    font-size: 80px;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: move 4s ease 1s infinite ;
+    position: relative;
+}
+.part2
+{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(183, 47, 47, 0.865);
+}
+.part2 ul li a
+{
+text-decoration: none;
+color: white;
+list-style: none;
+margin-left: 50px;
+font-size: 20px;
+}
+.part2 ul li 
+{
+    list-style: none;
+    margin-top: 9px;
+
+}
+.part2 ul 
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+}
+
+@keyframes move {
+100%
+{
+    background-position-y:500px ;
+}
+
+}
+.part2 ul li a:hover {
+    background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(183, 47, 47, 0.865);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.p1 h1{
+    padding-top: 50px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 7px;
+}
+.HEAD h1{
+    margin: 0;
+
+}
+.HEAD h3
+{
+    padding-top: 40px;
+    letter-spacing: 10px;
+}
+.part3,.part4,.part5,.part6,.part7
+{
+    padding-top: 60px;
+    height: 990px;
+    width: 1000px; 
+    text-align: justify;
+     margin: 0 auto; 
+     font-size: 20px;
+     line-height: 24px;
+    letter-spacing: 0px; 
+    }
+
+    .container {
+            background-image: url('bg.jpg');
+            background-size: contain;
+            height: 2900px;
+            width: 100%;
+        }
+
+        
+</style>
+</head>
+<body>
+<div class="main-part">
+    <div class="part1">
+        <div class="HEAD">
+            <h4><center>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</center></h4>
+            <h1>WEB TECHNOLOGIES</h1>
+        </div>         <img style="height: 180px;width: 400px;margin-top: 30px;margin-left: 170px;" src="img3.jpeg" alt="logo">
+    </div>
+    <div class="container">
+    
+    <div class="part2">
+        <ul>
+            <li><a href="Assignment1.html">Home</a></li>
+            <li><a href="CourseDetails.html">Course Details</a></li>
+            <li><a href="Material.html">Material</a></li>
+            <li class="dropdown">
+                <a href="Projects.html" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="projects_2024.html">2024</a>
+                    <a href="projects_2023.html">2023</a>
+                    <a href="projects_2022.html">2022</a>
+                </div>
+            </li>           
+            <li><a href="Quiz.html">Quiz</a></li>
+
+             <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Contact.html">Contact Us </a></li>
+        </ul>
+    </div>
+<div class="part3">
+
+    <h2>1. One-page Layout or Design </h2>
+    <p class="justified-text">Creating a one-page responsive design/layout is a great web development
+       project for beginners. It is a popular web project, particularly for individuals
+       who want to practice their web development knowledge by creating a simple yet
+    fully-operational website. This website could be made in a user-friendly manner
+       and present all the necessary information concisely.
+         You can complete this project by following the below steps:</p>
+    <ul>
+        <li>1.Plan the content.</li>
+            <li>Choose a design concept.</li>
+           <li> Design the page layout.</li>
+            <li>Develop the website by writing code.</li>
+            <li>Once developed, test the website to ensure that it works properly.</li>
+            <li>If it passes the test, the website is suitable to launch.</li>
+    </ul>
+    <h4>Source code:<a href="https://github.com/FreeCodeCamp-Solutions/Build-A-Tribute-Page">one-page-Layout</a></h4>
+
+<div class="part4">
+    <h2>2.Product Landing Page</h2>
+    <p>Creating a product landing page is one of the most common web development
+         projects for students looking to apply their understanding of web development 
+         in real life. A product landing page is a focused web page designed to drive
+          conversions and typically includes product details, benefits, and calls to
+           action. Working on this project will give you an opportunity to add some
+            advanced features, like CTAs, to a basic webpage. This project requires you
+             to know HTML, CSS, and JavaScript.
+         Here are the steps for creating a product landing page:</p>
+         <ul>
+            <li>Identify the target audience.</li>
+            <li>Develop the messaging and value proposition.</li>
+            <li>Design the layout and user interface.</li>
+            <li>Create clear calls to action.</li>
+            <li>Develop the landing page.</li>
+            <li>Test and launch the landing page.</li>
+         </ul>
+         <h4>Source code:<a href="https://github.com/FreeCodeCamp-Solutions/Product-Landing-Page">Netflix Clone</a></h4>
+
+         <div class="part5">
+            <h2>3. Netflix Home Page Clone</h2> <br>
+            <img src="idea.png" alt="pic" height="250px" width="400px">
+            <p>Creating a Netflix home page clone is a popular one for those interested in 
+                learning web development and improving their skills as a beginner.
+                 This project involves creating a webpage visually similar to the Netflix home page, including the 
+                layout, design, and functionality. This dynamic Netflix clone website project will offer all the
+                 tools you need to learn full-stack programming, helping you to master more functionalities. You will also work with a Node.js server to power it and TMDB API to handle all data.</p>
+                 <ul>
+                    <li>Plan the project and select the elements.</li>
+                    <li>Build the layout and add functionality.</li>
+                    <li> Use responsive design techniques and develop the webpage.</li>
+                    <li> Test and launch the webpage.</li>
+                 </ul>
+                 <h4>Source code:<a href="https://github.com/Bankole2000/netflix">Netflix Clone</a></h4>
+
+      <div class="part6">
+    <h2> 4.Quiz App</h2>
+         <p>Creating a quiz app is a fun yet challenging project that can help you improve
+          your web development, front-end development, and user experience design skills
+         all at once. This project aims to create a web application that allows users to 
+         take quizzes and receive feedback on their performance. By adding certain gifs
+         representing winning and losing the game, you can optionally award the user a 
+         score after the game and then declare them a winner if their score exceeds the threshold.
+         An exciting way to practice web development, isn't it?</p>
+          <h4>Source code:<a href="https://github.com/WebDevSimplified/JavaScript-Quiz-App">Quiz app</a></h4>
+
+          <div class="part7">
+            <h2> 5. Background Generator </h2>
+                 <p>A background generator is a great way to practice CSS skills and familiarize yourself with
+                     basic JavaScript concepts. In this project, you will select a basic or a gradient colour and 
+                     generate it via code. You will then create a webpage that generates random background colours
+                      and allows users to customize and copy the generated colour code. 
+                    This will help you practice your basics and give you a touch of interface design.?</p>
+
+             <ul>
+                <li>Plan the project and design the layout.</li>
+                    <li>Add functionality.</li>
+                    <li>Use CSS and add JavaScript.</li>
+                    <li>Test and launch the background generator.</li>
+                    
+             </ul>
+                  <h4>Source code:<a href="https://github.com/garimajain18/background-generator">Background-generator</Background-G></a></h4>
+                     
+                         
+</div>
+</div>
+</div>
+    
+</div>
+</div>
+</div>
+
+</body>
+</html>

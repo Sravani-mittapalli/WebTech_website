@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+body
+{
+margin: 0;
+}
+
+.part1
+{
+   display: flex;
+   flex-direction: row;
+   background-color: aliceblue;
+
+}
+.part1 h1
+{
+    font-size: 80px;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: move 4s ease 1s infinite ;
+    position: relative;
+}
+.part2
+{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(183, 47, 47, 0.865);
+}
+.part2 ul li a
+{
+text-decoration: none;
+color: white;
+list-style: none;
+margin-left: 50px;
+font-size: 20px;
+}
+.part2 ul li 
+{
+    list-style: none;
+    margin-top: 9px;
+
+}
+.part2 ul 
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+}
+.part2 ul li a:hover {
+    background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(183, 47, 47, 0.865);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@keyframes move {
+100%
+{
+    background-position-y:500px ;
+}
+}
+.HEAD h1{
+    margin: 0;
+
+}
+.HEAD h4
+{
+    padding-top: 40px;
+    letter-spacing: 7px;
+}
+.part3
+{
+    background-image: url(b5.png);
+    background-size: cover;
+    font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+<div class="main-part">
+    <div class="part1">
+        <div class="HEAD">
+            <h4><center>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</center></h4>
+            <h1>WEB TECHNOLOGIES</h1>
+        </div>         
+        <img style="height: 180px;width: 400px;margin-top: 30px;margin-left: 170px;" src="img3.jpeg" alt="logo">
+    </div>
+    <div class="part2">
+        <ul>
+            <li><a href="Assignment1.html">Home</a></li>
+            <li><a href="CourseDetails.html">Course Details</a></li>
+            <li><a href="Material.html">Material</a></li>
+            <li class="dropdown">
+                <a href="Projects.html" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="projects_2024.html">2024</a>
+                    <a href="projects_2023.html">2023</a>
+                    <a href="projects_2022.html">2022</a>
+                </div>
+            </li>           
+            <li><a href="Quiz.html">Quiz</a></li>
+
+             <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Contact.html">Contact Us </a></li>
+        </ul>
+    </div>
+    <div class="part3">
+        <table width="100%" height="900px"  border="25" cellpadding="10" cellspacing="0" class="t1">
+            <tr>
+                <th>UNITS</th>
+                <th>TOPICS</th>
+                <th>MATERIALS</th>
+                <th>VIDEO LECTURES</th>
+            </tr>
+            <tr>
+                <th rowspan="4">UNITS-I</th>
+                <th>Introduction to WEB</th>
+                <th><a href="#">Introduction to Web Architecture</a></th>
+                <th><a href="#">Basic concept of Web Application</a></th>
+            </tr>
+
+            <tr>
+                <th>Introduction to HTML </th>
+                <th><a href="#">Introduction to html ppt</a></th>
+                <th rowspan="2">  <a href="#"></a></th>
+            </tr>
+
+            <tr>
+                <th>Forms</th>
+                <th><a href="#">HTML forms</a></th>
+            </tr>
+
+            <tr>
+                <th>Frames</th>
+                <th><a href="#">Frame tages</a></th>
+                <th><a href="#">Frame topic in HTML</a></th>
+
+            </tr>
+
+            <tr>
+                <th rowspan="7">UNIT-II</th>
+                <th>Introduction to CSS</th>
+                <th><a href="#">Introduction to CSS PPT	</a></th>
+                <th rowspan="3"></th>
+            </tr>
+
+            <tr>
+                <th>Pseudo Classes</th>
+                <th><a href="#">CSS - Pseudo Classes</a></th>
+            </tr>
+
+            <tr>
+                <th>Page Layout	</th>
+                <th><a href="#">HTML Layouts</a></th>
+
+            </tr>
+
+           <tr>
+            <th>Introdcution to JavaScript</th>
+            <th><a href="#">Introduction to Java script	</a></th>
+
+           </tr>
+
+           <tr>
+            <th>Java Script object</th>
+            <th><a href="#">Java Script Functions & Object</a></th>
+           </tr>
+
+           <tr>
+            <th>HTML DOM</th>
+            <th><a href="#">DOM</a></th>
+           </tr>
+
+           <tr>
+            <th>DHTML</th>
+            <th><a href="#">Dynamic HTML</a></th>
+           </tr>
+
+           <tr>
+            <th rowspan="3">UNIT-III</th>
+            <th>Introduction to XML</th>
+            <th><a href="#">XML</a></th>
+            <th rowspan="3"></th>
+
+           </tr>
+
+           <tr>
+            <th>Document Type Definition</th>
+            <th><a href="#">DTD</a></th>
+
+           </tr>
+
+           <tr>
+            <th>XML DOM </th>
+            <th><a href="#">XML DOM</a></th>
+           </tr>
+
+           <tr>
+            <th rowspan="2">UNIT-IV</th>
+            <th>Introduction to AJAX</th>
+            <th><a href="#">AJAX</a></th>
+            <th rowspan="2"></th>
+
+            
+           </tr>
+           <tr>
+
+            <th>Servlets</th>
+            <th><a href="#">SERVLETS</a></th>        </tr>
+
+           <tr>
+            <th rowspan="3">UNIT-V</th>
+            <th>JSP</th>
+            <th><a href="#">JSP</a></th>
+           </tr>
+
+           <tr>
+            <th>JDBC</th>
+            <th><a href="#">JDBc</a></th>
+           </tr>
+        </table>
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+
+	
+	
+

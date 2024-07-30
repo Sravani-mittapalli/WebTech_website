@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .part1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(183, 47, 47, 0.7));
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            height: 200px;
+            gap: 20px;
+        }
+
+        .part1 h1 {
+            font-size: 65px;
+            background-image: url('img2.jpg');
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: move 4s ease 1s infinite;
+            position: relative;
+        }
+
+        .part2 {
+            height: 40px;
+            width: 100%;
+            background-color: rgba(183, 47, 47, 0.865);
+        }
+
+        .part2 ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .part2 ul li {
+            margin: 0 20px;
+            margin-top: 10px;
+        }
+
+        .part2 ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .part2 ul li a:hover {
+            background-color: #111;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(183, 47, 47, 0.865);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #111;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @keyframes move {
+            100% {
+                background-position-y: 500px;
+            }
+        }
+
+        .container {
+            background-image: url('bg.jpg');
+            background-size: contain;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .part3, .unit1 {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 20px;
+            border-radius: 10px; 
+        }
+
+        .part3 h1, .unit1 h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: 35px;
+        }
+
+        .part3 p, .unit1 p {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .part3 h3, .unit1 h3 {
+            margin-left: 30px;
+            font-size: 29px;
+            font-family: times;
+            text-decoration: underline;
+        }
+
+        span {
+            color: red;
+        }
+
+        .part3 ol li {
+            margin-left: 70px;
+            font-size: 23px;
+            font-family: times;
+            line-height: 38px;
+        }
+
+        .unit1 h3 {
+            margin-left: 70px;
+            font-size: 20px;
+            color: red;
+            font-family: Times;
+        }
+
+        .unit1 h1 {
+            text-align: center;
+            color: black;
+            font-size: 27px;
+        }
+
+        .unit1 p {
+            text-align: left;
+            margin-left: 70px;
+            font-size: 23px;
+            color: black;
+        }
+        #logo
+        {
+            height: 130px;
+            width: 380px;
+            border-radius: 20px;
+            margin-left: 150px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-part">
+        <div class="part1">
+            <div class="HEAD">
+                <h4 style="letter-spacing: 6px;"><center>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</center></h4>
+                <h1>WEB TECHNOLOGIES</h1>
+            </div>
+            <img src="img3.jpeg" id="logo" alt="logo">
+        </div>
+        <div class="part2">
+            <ul>
+                <li><a href="Assignment1.html">Home</a></li>
+                <li><a href="CourseDetails.html">Course Details</a></li>
+                <li><a href="Material.html">Material</a></li>
+                <li class="dropdown">
+                    <a href="Projects.html" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="projects_2024.html">2024</a>
+                        <a href="projects_2023.html">2023</a>
+                        <a href="projects_2022.html">2022</a>
+                    </div>
+                </li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Certificates.html">Certificates</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="part3">
+            <h1>Course Details</h1>
+            <p>Course Name: WEB TECHNOLOGIES <br>
+                YEAR/SEM: III/I
+            </p>
+            <h3>Course Outcomes</h3>
+            <ol>
+                <li>Develop static web pages using HTML tags <span>(L3)</span></li>
+                <li>Apply style sheets to web pages with data validation <span>(L3)</span></li>
+                <li>Create Machine understandable web documents using XML <span>(L6)</span></li>
+                <li>Develop servlet based dynamic web application <span>(L3)</span></li>
+                <li>Design data driven web application <span>(L6)</span></li>
+            </ol>
+        </div>
+
+        <div class="unit1">
+            <h1>UNIT-I</h1>
+            <h3>Introduction to Web:</h3>
+            <p>Understanding Internet and Web, Web Architecture, Web servers, protocols: HTTP</p>
+            <h3>Introduction to HTML:</h3>
+            <p>History of HTML, www, HTML Basics: Elements, Attributes, Tags, Tables, Forms, Frames, div and span tags</p>
+            <h3>Course Outcome:</h3>
+            <p>Develop static web page using HTML tags</p>
+        </div>
+        <br><br>
+
+        <div class="unit1">
+            <h1>UNIT-II</h1>
+            <h3>CSS:</h3>
+            <p>Introduction to Cascading Style Sheet, Types of style sheets, page layout, selectors, pseudo classes and elements</p>
+            <h3>JAVA SCRIPT:</h3>
+            <p>Introduction to scripting, control structures, conditional statements, Array functions, objects</p>
+            <h3>HTML DOM:</h3>
+            <p>Predefined object (Window, Location, History, Navigator), Events, DOM Node methods, Navigation Nodes: creating nodes, adding nodes, inserting nodes, removing & replacing nodes, Form object and elements, DHTML with Java script</p>
+            <h3>Course Outcome:</h3>
+            <p>Apply style sheets to web pages with data validation</p>
+        </div>
+        <br><br>
+
+        <div class="unit1">
+            <h1>UNIT-III</h1>
+            <h3>XML:</h3>
+            <p>Basics of XML, Elements, Attributes, validation, Namespace XML Scheme Languages: Introduction to DTD, internal and external DTD, Elements of DTD DTD Limitations, XML Schema, Schema structure, Elements, parsing using XML</p>
+            <h3>XML DOM:</h3>
+            <p>Document node, element node, Text node, Java and DOM, Navigating DOM Tree</p>
+            <h3>Course Outcome:</h3>
+            <p>Create Machine understandable web documents using XML</p>
+        </div>
+        <br><br>
+
+        <div class="unit1">
+            <h1>UNIT-IV</h1>
+            <h3>AJAX:</h3>
+            <p>Introduction, Environment, Asynchronous communication, process steps, sending and retrieving information, Ajax with XML</p>
+            <h3>Servlets:</h3>
+            <p>Introduction, Lifecycle, Generic and HTTP servlet, passing parameters to servlet, HTTP servlet Request & Response interfaces, Deploying web applications Session Tracking: Hidden form fields, cookies, URL-Rewriting, session</p>
+            <h3>Course Outcome:</h3>
+            <p>Develop servlet based dynamic web application</p>
+        </div>
+        <br><br>
+
+        <div class="unit1">
+            <h1>UNIT-V</h1>
+            <h3>JSP:</h3>
+            <p>Introduction, Difference between servlets & JSP, Anatomy of JSP page, JSP elements: Directives, comments, expressions, scriptlets, Declaration, Implicit JSP objects, using Action elements</p>
+            <h3>JDBC:</h3>
+            <p>Introduction, JDBC Drivers, Loading Driver, establishing connection, Executing SQL statement in JSP pages, MVC Architecture</p>
+            <h3>Course Outcome:</h3>
+            <p>Design data driven web applications</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            background-image: url('b2.png');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-part {
+            width: 100%;
+        }
+
+        .part1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(183, 47, 47, 0.7));
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            height: 200px;
+            gap: 20px;
+        }
+
+        .part1 h1 {
+            font-size: 70px;
+            background-image: url('img2.jpg');
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: move 5s ease 1s infinite;
+            position: relative;
+            margin: 0;
+            text-align: center;
+        }
+
+        .part1 h4 {
+            font-size: 20px;
+            letter-spacing: 7px;
+            margin: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .part1 img {
+            height: 100px;
+            width: auto;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-left: 30px;
+        }
+
+        .part1 img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes move {
+            100% {
+                background-position-y: 500px;
+            }
+        }
+
+        .part2 {
+            height: 40px;
+            width: 100%;
+            background-color: rgba(183, 47, 47, 0.865);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+
+        .part2 ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .part2 ul li {
+            margin-left: 50px;
+        }
+
+        .part2 ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .part2 ul li a:hover {
+            color: #111;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(183, 47, 47, 0.865);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #111;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .part3 {
+            margin-left: 150px;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .part3 h1 {
+            font-family: 'Allura', cursive;
+            font-size: 60px;
+            letter-spacing: 6px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .part3 pre {
+            font-family: 'Allura', cursive;
+            font-size: 29px;
+            letter-spacing: 6px;
+            margin: 10px 0;
+        }
+
+        .boxes1, .boxes2 {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        .l1 {
+            margin-top: 30px;
+            height: 250px;
+            width: 250px;
+            background-color: rgba(183, 47, 47, 0.865);
+            border-radius: 40px;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .l1 img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        .l1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fadeIn {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <div class="main-part">
+        <div class="part1">
+            <div>
+                <h1>WEB TECHNOLOGIES</h1>
+                <h4>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</h4>
+            </div>
+            <img src="img3.jpeg" alt="logo">
+        </div>
+        <div class="part2">
+            <ul>
+                <li><a href="Assignment1.html">Home</a></li>
+                <li><a href="CourseDetails.html">Course Details</a></li>
+                <li><a href="Material.html">Material</a></li>
+                <li class="dropdown">
+                    <a href="Projects.html" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="projects_2024.html">2024</a>
+                        <a href="projects_2023.html">2023</a>
+                        <a href="projects_2022.html">2022</a>
+                    </div>
+                </li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Certificates.html">Certificates</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="part3">
+        <h1>Contact Us</h1>
+        <pre>For all enquiries, please mail us!</pre>
+        <div class="boxes1">
+            <div class="l1 fadeIn delay-1">
+                <img src="s1.png" alt="Profile Picture">
+                Mr. V. RAMA KRISHNA <br>
+                ASSISTANT PROFESSOR <br>
+                9666078505 <br>
+                ramakrishnacse@anurag.edu.in <br>
+            </div>
+        </div>
+        <h1>Developed by</h1>
+        <div class="boxes2">
+            <div class="l1 fadeIn delay-1">
+                <img src="s3.jpeg" alt="Raouthu Sandeep">
+                Raouthu Sandeep<br>
+                STUDENT<br>
+                22EG105A50<br>
+                22eg105a40@anurag.edu.in<br>
+            </div>
+            <div class="l1 fadeIn delay-2">
+                <img src="s2.jpeg" alt="Mittapalli Sravani">
+                Mittapalli Sravani<br>
+                STUDENT<br>
+                22EG105A40<br>
+                22eg105a50@anurag.edu.in<br>
+            </div>
+            <div class="l1 fadeIn delay-3">
+                <img src="s4.jpeg" alt="Vanagari RajeevNetra">
+                Vanagari RajeevNetra<br>
+                STUDENT<br>
+                22EG105A58<br>
+                22eg105a58@anurag.edu.in<br>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.l1');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) 
+                    {
+                        entry.target.classList.add('fadeIn');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            boxes.forEach(box => {
+                observer.observe(box);
+            });
+        });
+    </script>
+</body>
+</html>

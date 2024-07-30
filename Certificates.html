@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+        }
+        .part1 {
+            display: flex;
+            flex-direction: row;
+            background-color: aliceblue;
+        }
+        .part1 h1 {
+            font-size: 80px;
+            background-image: url(img2.jpg);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: move 4s ease 1s infinite;
+            position: relative;
+        }
+        .part2 {
+            height: 40px;
+            width: 100%;
+            background-color: rgba(183, 47, 47, 0.865);
+            margin: 0;
+        }
+        .part2 ul li a {
+            text-decoration: none;
+            color: white;
+            list-style: none;
+            margin-left: 50px;
+            font-size: 20px;
+        }
+        .part2 ul li {
+            list-style: none;
+            margin-top: 9px;
+        }
+        .part2 ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+        }
+        @keyframes move {
+            100% {
+                background-position-y: 500px;
+            }
+        }
+        .part2 ul li a:hover {
+            background-color: #111;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(183, 47, 47, 0.865);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #111;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .HEAD h1 {
+            margin: 0;
+        }
+        .HEAD h4 {
+            padding-top: 40px;
+            letter-spacing: 7px;
+        }
+        .p1 {
+            display: block;
+        }
+        .p1 h1 {
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: 45px;
+            text-align: center;
+            letter-spacing: 10px;
+            margin: 0; 
+            padding-top: 40px;
+        }
+        .p1 p {
+            text-align: justify;
+            padding-top: 40px; 
+            color: black;
+            font-size: 20px;
+            margin-left: 300px;
+            line-height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-part2 {
+            height: 1200px;
+            width: 100vw;
+            background-color: #cae4db;
+        }
+        .main-part, .main-part2 {
+            margin: 0;
+            padding: 0;
+        }
+        .courses {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            z-index: 1;
+        }
+        .c1 {
+            height: 500px;
+            width: 200px;
+            background-color: rgb(194, 179, 154);
+            text-align: center;
+            line-height: 30px;
+        }
+        .c1 button {
+            background-color: rgb(17, 184, 131);
+            border-radius: 9px;
+            height: 30px;
+            width: 120px;
+            border: none;
+        }
+        .c1 button a {
+            text-decoration: none;
+            color: black;
+        }
+        .carousel {
+            position: relative;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 1000px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            height: 300px;
+            background-image: url(b6.png);
+            background-size: cover;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .carousel-item h2 {
+            color: #111;
+            font-size: 30px;
+        }
+        .carousel-item p {
+            color: rgb(213, 59, 59);
+            font-size: 18px;
+        }
+        .carousel-item button {
+            background-color: rgb(17, 184, 131);
+            border-radius: 9px;
+            height: 40px;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .carousel-item button a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+        }
+        .carousel-item button:hover {
+            background-color: #15a25a;
+        }
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-nav button {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+        .carousel-nav button:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        @keyframes move {
+            100% {
+                background-position-y: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-part">
+        <div class="part1">
+            <div class="HEAD">
+                <h4><center>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</center></h4>
+                <h1>WEB TECHNOLOGIES</h1>
+            </div>
+            <img style="height: 180px;width: 400px;margin-top: 30px;margin-left: 170px;" src="img3.jpeg" alt="logo">
+        </div>
+        <div class="part2">
+            <ul>
+                <li><a href="Assignment1.html">Home</a></li>
+                <li><a href="CourseDetails.html">Course Details</a></li>
+                <li><a href="Material.html">Material</a></li>
+                <li class="dropdown">
+                    <a href="Projects.html" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="projects_2024.html">2024</a>
+                        <a href="projects_2023.html">2023</a>
+                        <a href="projects_2022.html">2022</a>
+                    </div>
+                </li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Certificates.html">Certificates</a></li>
+                <li><a href="Contact.html">Contact Us </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-part2">
+        <div class="p1">
+            <h1>Certifications</h1>
+            <p>Web designing is a form of technical art which helps us design websites. Most of the students <br>
+                self-learn the art of web development, which would actually not suffice. Rather, certification as <br>
+                a web designer will give you a good scope. Moreover, getting web design certifications helps you to <br>
+                prove that you are qualified and ready to work as a professional web designer.</p>
+        </div>
+        <br>
+        <div id="carousel" class="carousel">
+            <div id="carousel-inner" class="carousel-inner">
+                <div class="carousel-item">
+                    <h2>Udemy</h2>
+                    <p>Beginner Full Stack Web Development: HTML, CSS, React & Node</p>
+                    <button><a href="https://www.udemy.com/course/the-web-developer-bootcamp/?ranMID=39197&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-URFxskp5bh.1XxCjoLgR_w&LSNPUBID=je6NUbpObpQ&utm_source=aff-campaign&utm_medium=udemyads&couponCode=LETSLEARNNOWPP">View Course</a></button>
+                </div>
+                <div class="carousel-item">
+                    <h2>IBM</h2>
+                    <p>Skilled Full Stack Web Developer – With IBM Build Skills Certification</p>
+                    <button><a href="https://sb-auth.skillsbuild.org/login?client_id=yl-internal-adopter&learning_path=https:%2F%2Fskills.yourlearning.ibm.com%2Factivity%2FPLAN-636FD9350D5C&redirect_uri=https:%2F%2Fskills.yourlearning.ibm.com%2Foauth%2Fcallback&referer=skills.yourlearning.ibm.com&response_type=code&scope=openid%20email">View Course</a></button>
+                </div>
+                <div class="carousel-item">
+                    <h2>Infosys</h2>
+                    <p>Expert Full Stack Web Developer – With Infosys Springboard Certification</p>
+                    <button><a href="https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Fsearch%2Flearning%3Flang%3Den%26q%3Dfront%2520end%26f%3D%257B%2522contentType%2522:%255B%2522Course%2522,%2522Certification%2522%255D%257D">View Course</a></button>
+                </div>
+                <div class="carousel-item">
+                    <h2>LinkedIn</h2>
+                    <p>Professional Full Stack Web Developer – With LinkedIn Certification</p>
+                    <button><a href="https://www.linkedin.com/learning/paths/become-a-full-stack-web-developer?src=aff-lilpar&veh=aff_src.aff-lilpar_c.partners_pkw.27795_plc.Viglink%20Primary_pcrid.465847_learning&trk=aff_src.aff-lilpar_c.partners_pkw.27795_plc.Viglink%20Primary_pcrid.465847_learning&clickid=xa7VTVQx5xyORIPwUx0Mo3Q1UkE3LXToZ2ngUg0&irgwc=1">View Course</a></button>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const carouselInner = document.getElementById('carousel-inner');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function showItem(index) {
+            const items = document.querySelectorAll('.carousel-item');
+            if (index >= items.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = items.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            showItem(currentIndex - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            showItem(currentIndex + 1);
+        });
+
+        showItem(currentIndex);
+    </script>
+</body>
+</html>
